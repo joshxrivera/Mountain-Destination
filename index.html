@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mountain Destination</title>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link href="style.css" rel="stylesheet">
+	<link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+</link>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#"><img src="img/mountains-inside-a-circle.png"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#welcome">Welcome</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#steamboat">Steamboat</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#mammoth">Mammoth</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#whistler">Whistler</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+
+			<button class="btn btn-dark" id="darkModeToggle">Dark Mode</button>
+		</div>
+	</a>
+	<script>
+		// Add smooth scrolling on all links inside the navbar
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a.nav-link").on('click', function(event) {
+		
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+			  // Prevent default anchor click behavior
+			  event.preventDefault();
+		
+			  // Store hash
+			  var hash = this.hash;
+		
+			  // Using jQuery's animate() method to add smooth page scroll
+			  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			  $('html, body').animate({
+				scrollTop: $(hash).offset().top
+			  }, 800, function(){
+		   
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+			  });
+			}  // End if
+		  });
+		});
+		</script>
+		
+</nav>
+
+<div id="slides" class="carousel slide" data-ride="carousel" data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000">
+    <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+        <li data-target="#slides" data-slide-to="3"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="image" src="img/mountains copy.jpeg">
+            <div class="carousel-caption">
+                <h1 class="display-2">THE MOUNTAINS ARE CALLING</h1>
+                <h3>Will You Answer?</h3>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="image" src="img/steamboat strip.jpeg">
+			<div class="carousel-caption">
+				<h1 class="display-2">STEAMBOAT</h1>
+			</div>
+        </div>
+        <div class="carousel-item">
+            <img class="image" src="img/mammoth base.jpeg">
+			<div class="carousel-caption">
+				<h1 class="display-2">MAMMOTH</h1>
+			</div>
+        </div>
+        <div class="carousel-item">
+            <img class="image" src="img/whistler base.jpeg"> 
+			<div class="carousel-caption">
+				<h1 class="display-2">WHISTLER BLACKCOMB</h1>
+			</div>
+        </div>
+    </div>
+</div>
+
+
+<!--- Welcome Section -->
+<div id="welcome" class="container-fluid padding"data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="50"
+		data-aos-duration="1000">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">Life Peaks at High Altitudes.</h1>
+		</div>
+		<hr>
+		<div class="col-12">
+			<p class="lead">Welcome to Mountain Destination!
+				Your ultimate guide to breathtaking mountain retreats where adventure awaits and memories are waiting to be made. 
+				Here, you'll discover the best trails, stunning photography, and essential tips for your next high-altitude getaway.</p>
+		</div>
+	</div>
+</div>
+
+<!--- Three Column Section -->
+<div class="container-fluid padding" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">
+    <div class="row text-center padding">
+        <!-- HTML5 Section -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <img src="img/steamboat.webp" alt="HTML5" style="width:100px; height:100px;">
+            <h3>STEAMBOAT</h3>
+            <p>Steamboat Springs, Colorado</p>
+        </div>
+
+        <!-- Bootstrap Section -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <img src="img/mammoth.png" alt="Bootstrap" style="width:100px; height:100px;">
+            <h3>MAMMOTH</h3>
+            <p>Mammoth Lakes, California</p>
+        </div>
+
+        <!-- CSS3 Section -->
+        <div class="col-xs-12 col-md-4">
+            <img src="img/whistler.jpg" alt="CSS3" style="width:100px; height:100px;">
+            <h3>WHISTLER BLACKCOMB</h3>
+            <p>Whistler, B.C, Canada</p>
+        </div>
+    </div>
+    <hr class="my-4">
+</div>
+
+
+<!--- Two Column Section -->
+<div id="steamboat" class="container-fluid padding"data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="50"
+		data-aos-duration="1000">
+	<div class="row padding">
+		<div class="col-md-12 col-lg-6">
+			<h2>Steamboat Springs, Colorado</h2>
+			<p>Steamboat Springs, nestled in the picturesque Yampa Valley in Colorado, offers a unique blend of natural beauty and vibrant downtown life. The town, affectionately known as 'Ski Town, U.S.A.', is renowned for its world-class ski resort, which boasts some of the country’s finest slopes and champagne powder snow. The resort’s well-maintained trails cater to all skill levels, from beginners to seasoned skiers, making it an inclusive destination for all winter sport enthusiasts. Beyond skiing, the resort offers a range of activities like snowboarding, scenic gondola rides, and snowshoeing, ensuring a wholesome and diverse mountain experience.
+			</p>
+			<p>The downtown area of Steamboat Springs is equally charming, with its quaint Main Street lined with an eclectic mix of shops, galleries, and restaurants. This area reflects the town's rich history and commitment to preserving its Western heritage, offering a warm, small-town atmosphere. Visitors can explore unique boutiques offering locally made crafts, dine in fine restaurants serving farm-to-table cuisine, or simply enjoy the cozy ambience of a local coffee shop. In the evening, the town comes alive with vibrant nightlife, including live music and entertainment, making it a perfect blend of rustic charm and contemporary culture.
+			</p>
+			<p>The beauty of Steamboat Springs extends beyond its slopes and streets. The area is surrounded by stunning natural landscapes, including lush forests, rolling hills, and the picturesque Yampa River. This setting not only provides breathtaking views but also a playground for outdoor activities year-round. In the warmer months, hiking, mountain biking, fishing, and hot air ballooning are popular. Its proximity to natural hot springs offers a relaxing retreat after a day of adventure. Steamboat’s unique combination of stunning natural beauty, exceptional ski facilities, and a lively downtown makes it an unforgettable destination for visitors.
+			</p>
+				<br>
+				<a href="#" class="btn btn-primary">Learn More</a>
+		</div>
+		<div class="col-lg-6">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ul>
+                
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/steam map.jpeg" alt="map" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/downtown steam.jpeg" alt="downtown" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/steam mountain.jpeg" alt="base" class="d-block w-100">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a class="weatherwidget-io" href="https://forecast7.com/en/40d48n106d83/steamboat-springs/?unit=us" data-label_1="STEAMBOAT SPRINGS" data-label_2="WEATHER" data-theme="original" >STEAMBOAT SPRINGS WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+<hr class="my-4">
+
+<!--- Two Column Section Oppo -->
+
+<div id="mammoth" class="container-fluid padding" data-aos="fade-up"
+     data-aos-offset="200"
+     data-aos-delay="50"
+     data-aos-duration="1000">
+    <div class="row padding">
+        <!-- Image Carousel on the Left -->
+        <div class="col-lg-6">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ul>
+                
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/mammoth map.jpeg" alt="map" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/mammoth lift.jpeg" alt="downtown" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/big mammoth.jpeg" alt="base" class="d-block w-100">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Text and Title on the Right -->
+        <div class="col-md-12 col-lg-6">
+            <h2>Mammoth Lakes, California</h2>
+            <p>Mammoth Lakes, California, nestled in the heart of the Sierra Nevada mountains, is a destination that exudes charm and adventure throughout the year. Known for its breathtaking natural beauty, this idyllic town transforms into a haven for outdoor enthusiasts, especially during the winter months. The fun in Mammoth Lakes is as boundless as its stunning landscapes, ranging from tranquil hikes along crystal-clear lakes and streams to the thrilling adrenaline rush of mountain biking on rugged trails. In the winter, the town becomes a picturesque wonderland, attracting visitors with its snow-covered vistas and cozy, inviting ambience. The unique combination of serene nature and active outdoor recreation makes Mammoth Lakes a perfect getaway for those looking to escape the hustle and bustle of daily life.</p>
+            <p>At the heart of Mammoth Lakes' winter allure is the Mammoth Mountain Ski Area, one of the most iconic ski resorts in California. Boasting some of the longest ski seasons in North America, the resort is a paradise for skiers and snowboarders of all skill levels. Its impressive array of trails, high-quality snow, and state-of-the-art facilities contribute to its reputation as a top-tier winter sports destination. From beginner-friendly slopes to challenging terrains for the experienced, Mammoth Mountain offers a diverse range of options, ensuring that every visitor finds their own slice of winter joy. Off the slopes, the resort also provides a range of activities like snowshoeing and cross-country skiing, allowing visitors to explore the scenic beauty of the Sierras in different ways.</p>
+            <p>But the fun at Mammoth Lakes doesn't end with the ski season. As the snow melts and summer unveils the area's lush greenery, the region transforms again, offering a new array of activities. Hiking and mountain biking trails become accessible, revealing stunning views of the surrounding mountain ranges and verdant valleys. The lakes, true to the town’s name, become hotspots for fishing, kayaking, and paddleboarding, offering a serene experience amidst nature’s splendor. Throughout the year, Mammoth Lakes' vibrant community also hosts various events and festivals, adding a cultural dimension to the natural beauty. Whether it's for the thrill of winter sports at the iconic Mammoth Mountain Ski Resort or the serene enjoyment of the alpine summers, Mammoth Lakes stands as a testament to fun and adventure in the heart of California's wilderness.</p>
+            <br>
+            <a href="#" class="btn btn-primary">Learn More</a>
+        </div>
+    </div>
+</div>
+
+<a class="weatherwidget-io" href="https://forecast7.com/en/37d65n118d97/mammoth-lakes/?unit=us" data-label_1="MAMMOTH LAKES" data-label_2="WEATHER" data-theme="original" >MAMMOTH LAKES WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+<hr class="my-4">
+
+<!--- Two Column Section -->
+<div id="whistler" class="container-fluid padding"data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="50"
+		data-aos-duration="1000">
+	<div class="row padding">
+		<div class="col-md-12 col-lg-6">
+			<h2>Whistler Blackcomb, B.C, Canada</h2>
+			<p>Whistler, Canada, nestled in the majestic Coast Mountains of British Columbia, stands as a testament to the sublime beauty of nature and the thrill of adventure. This picturesque town, with its breathtaking landscapes and vibrant atmosphere, is a sanctuary for those seeking a blend of relaxation and exhilaration. The stunning vistas of alpine forests, crystal-clear lakes, and towering peaks provide a backdrop for a plethora of outdoor activities, attracting nature enthusiasts and thrill-seekers alike. Whistler's enchanting natural beauty is not just a sight to behold but also a playground for hiking, mountain biking, and exploring the great outdoors, making it an ideal destination for those who cherish the wilderness.</p>
+			<p>At the forefront of Whistler's allure is the world-renowned Whistler Blackcomb Ski Resort, known for its exceptional quality and expansive terrain. Boasting over 8,000 acres of skiable land, it is not only one of the largest ski resorts in North America but also one of the most highly regarded. The resort offers a diverse array of slopes to cater to skiers and snowboarders of all levels, from gentle runs for beginners to challenging backcountry areas for the experienced. Its modern facilities, consistent snowfall, and meticulously groomed trails contribute to a superior skiing and snowboarding experience, firmly establishing Whistler Blackcomb as a premier destination for winter sports enthusiasts.</p>
+			<p>Whistler's reputation on the global stage was further solidified when it co-hosted the 2010 Winter Olympics along with Vancouver. This prestigious event spotlighted Whistler's world-class facilities and stunning scenery, showcasing the town's capacity to host events of international significance. The Olympic legacy lives on in the area, with many of the Olympic venues still in use and open to the public, adding a historic and cultural dimension to its appeal. Visitors can experience the Olympic Sliding Centre or ski on the same runs used by the world's top athletes, adding an exciting element to their adventure. Whistler's blend of natural beauty, outdoor adventure, and a history of sporting excellence makes it not just a destination but an experience that resonates with everyone who visits.</p>
+				<br>
+				<a href="#" class="btn btn-primary">Learn More</a>
+		</div>
+		<div class="col-lg-6">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ul>
+                
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/whistler map.jpeg" alt="map" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/whistler overshot.jpeg" alt="overall" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/whistler olympics.jpeg" alt="olympics" class="d-block w-100">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a class="weatherwidget-io" href="https://forecast7.com/en/50d12n122d96/whistler/?unit=us" data-label_1="WHISTLER" data-label_2="WEATHER" data-theme="original" >WHISTLER WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+<hr class="my-4">
+
+<!--- Altitude Sickness Advisory Section -->
+<div class="container-fluid padding" data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="50"
+		data-aos-duration="1000">
+	<div class="row padding">
+		<div class="col-12 text-center">
+			<h2>Altitude Sickness Advisory</h2>
+			<p>Enter the elevation of your mountain destination to receive advice on altitude sickness prevention.</p>
+			<input type="number" id="altitudeInput" placeholder="Enter altitude in meters" aria-label="Altitude in meters">
+			<button onclick="giveAltitudeAdvice()" class="btn btn-primary">Get Advice</button>
+			<p id="altitudeAdvice"></p>
+		</div>
+	</div>
+</div>
+<script>
+	function giveAltitudeAdvice() {
+		var altitude = document.getElementById('altitudeInput').value;
+		var advice = document.getElementById('altitudeAdvice');
+		
+		if (altitude === "") {
+			advice.innerHTML = "Please enter a valid altitude.";
+			return;
+		}
+	
+		altitude = parseInt(altitude);
+		
+		if (altitude < 2500) {
+			advice.innerHTML = "No significant risk of altitude sickness at this elevation.";
+		} else if (altitude >= 2500 && altitude < 3500) {
+			advice.innerHTML = "Moderate risk of altitude sickness. Stay hydrated and acclimatize properly.";
+		} else if (altitude >= 3500) {
+			advice.innerHTML = "High risk of altitude sickness. Acclimatization and medication may be necessary.";
+		} else {
+			advice.innerHTML = "Please enter a valid altitude.";
+		}
+	}
+	</script>
+
+<hr class="my-4">
+
+
+<!--- Two Column Section -->
+<div class="container-fluid padding" data-aos="fade-up"
+		data-aos-offset="200"
+		data-aos-delay="50"
+		data-aos-duration="1000">
+	<div class="row padding">
+		<div class="col-md-12 col-lg-6">
+			<h2>About Me</h2>
+			<p>My name is Joshua Rivera, I am from San Diego, California and currently live in Riverside, Ca where I am attending California Baptist University studying Computer Science.  </p>
+			<p>For the last 15 years I have been skiing all across the country to find the best slopes and the best snow. I have been to Steamboat, Mammoth, and Whistler and I can tell you that these are the best places to ski in the world. By far these are my favorite 
+			places to ski and I would recommend them to anyone who loves to ski.
+			</p>
+
+		</div>
+		<div class="col-lg-6">
+			<img src="img/ski jump.jpeg" class="img-fluid">
+		</div>
+	</div>
+	<hr class="my-4">
+</div>
+
+<!--- Contact -->
+
+<div class="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
+	<div class="container mx-auto">
+	  <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+		<div class="text-center">
+		  <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
+			Contact Us
+		  </h1>
+		  <p class="text-gray-400 dark:text-gray-400">
+			Fill up the form below to send us a message.
+		  </p>
+		</div>
+		<div class="m-7">
+		  <form action="https://api.web3forms.com/submit" method="POST" id="form">
+			<input type="hidden" name="access_key" value="0a623481-b90f-4846-8b7d-6bbeaa1a6771" />
+			<input type="hidden" name="subject" value="New Submission from Web3Forms" />
+			<input type="checkbox" name="botcheck" id="" style="display: none;" />
+  
+			<div class="mb-6">
+			  <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Full Name</label>
+			  <input type="text" name="name" id="name" placeholder="John Doe" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+			</div>
+			<div class="mb-6">
+			  <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label>
+			  <input type="email" name="email" id="email" placeholder="you@company.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+			</div>
+			<div class="mb-6">
+			  <label for="phone" class="text-sm text-gray-600 dark:text-gray-400">Phone Number</label>
+			  <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+			</div>
+			<div class="mb-6">
+			  <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Message</label>
+  
+			  <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
+			</div>
+			<div class="mb-6">
+			  <button type="submit" class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+				Send Message
+			  </button>
+			</div>
+			<p class="text-base text-center text-gray-400" id="result"></p>
+		  </form>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+
+<!--- Footer -->
+<footer>
+				<h5>&copy; </h5>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+
+<script>
+    // Check for saved dark mode setting in localStorage on page load
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark-mode');
+        document.getElementById('darkModeToggle').innerText = 'Light Mode';
+    }
+
+    // Dark mode toggle function
+    document.getElementById('darkModeToggle').onclick = function() {
+        document.body.classList.toggle('dark-mode');
+        if (document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('darkMode', 'enabled');
+            this.innerText = 'Light Mode';
+        } else {
+            localStorage.setItem('darkMode', null);
+            this.innerText = 'Dark Mode';
+        }
+    };
+</script>
+<button onclick="topFunction()" id="myBtn" title="Go to top" style="display: none; position: fixed; bottom: 20px; right: 30px; z-index: 99; font-size: 18px; border: none; outline: none; background-color: #555; color: white; cursor: pointer; padding: 15px; border-radius: 4px;">
+    ↑ Top
+</button>
+
+<script>
+    window.onscroll = function() {
+        scrollFunction();
+    };
+    
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
+    }
+</script>
+
+	  
+</body>
+</html>
